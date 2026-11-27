@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FridayFinds — Real Black Friday Deals, Checked 27 Nov 2026</title>
+<meta name="description" content="24 Black Friday and Cyber Monday deals checked by hand on 27 Nov 2026 — sale price, usual price, discount and an honest verdict on whether each one is really a deal.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="brand">
+      <h1 class="brand-name">Friday<span class="flare">Finds</span></h1>
+      <span class="brand-tag">Black Friday 2026</span>
+    </div>
+    <p class="hero-sub">Real deals, checked by hand — not scraped, not guessed. Every price below was read at its store on <strong>27 Nov 2026</strong>, with the evidence for whether it is really a deal.</p>
+    <div class="stats" id="stats"></div>
+  </div>
+</header>
+
+<div class="toolbar">
+  <div class="wrap">
+    <div class="toolbar-row">
+      <input class="search" id="search" type="search" placeholder="Search deals — try “AirPods”, “OLED” or “vacuum”…" aria-label="Search deals">
+      <select id="store-filter" aria-label="Filter by store"></select>
+      <select id="discount-filter" aria-label="Filter by discount">
+        <option value="0">Any discount</option>
+        <option value="20">20% off or more</option>
+        <option value="30">30% off or more</option>
+        <option value="40">40% off or more</option>
+        <option value="50">50% off or more</option>
+      </select>
+      <select id="sort" aria-label="Sort deals">
+        <option value="discount">Biggest discount</option>
+        <option value="savings">Biggest saving ($)</option>
+        <option value="price">Lowest price</option>
+        <option value="verdict">Best verdict</option>
+      </select>
+    </div>
+    <div class="chips" id="category-chips"></div>
+  </div>
+</div>
+
+<main class="wrap">
+  <div id="list-view">
+    <p class="result-line" id="result-count"></p>
+    <div class="grid" id="grid"></div>
+    <section class="key" aria-label="What the verdicts mean">
+      <h2>What the verdicts mean</h2>
+      <div class="key-list">
+        <div class="key-item"><span class="verdict verdict-new-low">NEW LOW</span><p>The lowest price this product has ever sold for, or the lowest yet for a new model.</p></div>
+        <div class="key-item"><span class="verdict verdict-strong">STRONG DEAL</span><p>A genuinely good price — a big cut, well below what the product usually sells for.</p></div>
+        <div class="key-item"><span class="verdict verdict-routine">ROUTINE DEAL</span><p>A real cut, but one that comes back every sale. Worth buying if you need it; no rush if you don’t.</p></div>
+      </div>
+    </section>
+  </div>
+  <div id="detail-view" hidden></div>
+</main>
+
+<footer class="method">
+  <div class="wrap">
+    <h2>How these deals were checked</h2>
+    <p>Every deal on this page was found and checked by a person reading the web on <strong>27 Nov 2026</strong>: the product page at its store, or a deal source that names the store and its price. The “usual price” is the store’s list or comparison value. Discounts are computed from the two prices shown.</p>
+    <p>Verdicts are honest on purpose. A price can be an all-time low and still be routine if it returns every Black Friday — the DualSense controller is the example here. A deal can also be real and still sell out, as Dell’s XPS 13 base model did while it was being checked.</p>
+    <p>Prices change fast during Black Friday week and stock runs out. Always check the store’s price at checkout before you buy — that is the price that counts. FridayFinds takes no payment and earns nothing from these links.</p>
+  </div>
+</footer>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
